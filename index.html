@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="background-color: rgba(54, 54, 54, 0.242);">
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="">Portfolio</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="title-card">
+            <h1>Hi, I'm Spencer Yonce.</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>My Projects</h2>
+            <p>Here are some of my projects that I have worked on.</p>
+            <div class="card-container">
+                <div class="card-item">
+                    <h3>Calculator</h3>
+                    <p>Super amazing calculator that can add, subtract, divide, and multiply.</p>
+                </div>
+                <div class="card-item">
+                    <h3>This Portfolio Site</h3>
+                    <p>I made a portfolio site for myself showcasing a few of the projects that I have worked on.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Color Generator</h3>
+                    <p>This color generator uses AI to prompt the user for a mood and then generates a color for them to choose from and export via CSS, HTML, or rgb, or HEX values. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="contact-form">
+        <div class="container">
+            <div class="card">
+                <h2>Contact Me</h2>
+                <p>Feel free to contact me with any questions or comments.</p>
+                <div class="card-container">
+                    <div class="card-item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                    </div>
+                    <div class="card-item">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                    <div class="card-item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                    <div class="card-item">
+                        <input type="submit" value="Submit" onclick="sendEmail()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
